@@ -1,0 +1,20 @@
+{
+	"name": "Mailer API Server",
+	"description": "API para suporte de apps mobile",
+	"repository": "https://github.com/idopterlabs/mailer-api-server",
+	"keywords": ["node", "express"],
+  "env": {
+    "MAILER_USER": {
+      "description": "User name for the SMTP server",
+      "value":"replace-me"
+    },
+    "MAILER_PASSWORD": {
+      "description": "Password for the SMTP server",
+      "value": "replace-me-too"
+    },
+    "AUTH_KEY": {
+      "description": "value passed via x-auth header to authenticate calls",
+      "generator": "secret"
+    }
+  }
+}
